@@ -4,6 +4,7 @@
 # 멀티플랫폼 지원을 위한 베이스 이미지 선택
 FROM eclipse-temurin:17-jdk-alpine AS builder
 
+RUN apk add --no-cache curl
 # 작업 디렉토리 설정
 WORKDIR /app
 
